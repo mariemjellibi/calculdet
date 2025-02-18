@@ -60,6 +60,7 @@ const App = () => {
         {matrix.map((row, rowIndex) =>
           row.map((value, colIndex) => (
             <input
+              type="number"
               key={`${rowIndex}-${colIndex}`}
               value={value}
               onChange={(e) => handleChange(rowIndex, colIndex, e.target.value)}
